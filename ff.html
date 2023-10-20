@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>reveal.js – The HTML Presentation Framework</title>
+    <title>Sannsyn</title>
 
     <meta
       name="description"
@@ -21,50 +21,104 @@
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="dist/theme/white.css" id="theme" />
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
 
     <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-      }
-
-      .reveal,
-      .slides {
-        height: 100%;
-      }
-
       #particles-js {
         position: fixed;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         top: 0;
         left: 0;
         z-index: -1;
+        background-color: #fcfbfb;
       }
 
       .content {
         position: relative;
         z-index: 1;
       }
+
+      .darkbox {
+        width: 40%;
+        right: 0;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 5px 25px rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        padding: 50px;
+        text-align: left;
+      }
+
+      .lightbox {
+        width: 40%;
+        right: 0;
+        box-shadow: 0 1px 4px rgba(255, 255, 255, 0.5),
+          0 5px 25px rgba(253, 253, 253, 0.2);
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #fff;
+        padding: 50px;
+        text-align: left;
+      }
+
+      .logo-container {
+        position: fixed;
+        bottom: 50px;
+        right: 130px;
+        width: 300px;
+        height: 200px;
+        z-index: 1000;
+      }
+
+      .logo-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(253, 250, 250);
+        box-shadow: 0 1px 4px rgba(255, 255, 255, 0.5),
+          0 5px 25px rgba(246, 246, 246, 0.946);
+      }
+
+      .logo-container img.logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .logo-container img {
+        margin: 10px;
+        margin-bottom: 30px;
+        height: auto;
+        width: 60%;
+      }
     </style>
   </head>
 
   <body>
     <div class="reveal">
-      <!-- Any section element inside of this container is displayed as a slide -->
+      <!-- Logo -->
+      <div class="logo-container">
+        <div class="logo-bg"></div>
+        <img src="assets/sannsyn_logo.png" alt="Logo" class="logo" />
+      </div>
+      <!-- Slidess -->
+      <div id="particles-js"></div>
       <div class="slides">
-        <div id="particles-js"></div>
         <section>
-          <div class="content">Hello</div>
+          <h1>TEST</h1>
+        </section>
+        <section>
+          <h1>TEST2</h1>
         </section>
       </div>
     </div>
-
     <script src="dist/reveal.js"></script>
     <script src="plugin/zoom/zoom.js"></script>
     <script src="plugin/notes/notes.js"></script>
@@ -91,7 +145,6 @@
       });
     </script>
     <script src="particles.js/particles.js"></script>
-
     <script src="custom.js"></script>
   </body>
 </html>
