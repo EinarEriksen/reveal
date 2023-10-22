@@ -25,80 +25,7 @@
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-
-    <style>
-      #particles-js {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        background-color: #fcfbfb;
-      }
-
-      .content {
-        position: relative;
-        z-index: 1;
-      }
-
-      .darkbox {
-        width: 40%;
-        right: 0;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 5px 25px rgba(0, 0, 0, 0.2);
-        background-color: rgba(0, 0, 0, 0.9);
-        color: #fff;
-        padding: 50px;
-        text-align: left;
-      }
-
-      .lightbox {
-        width: 40%;
-        right: 0;
-        box-shadow: 0 1px 4px rgba(255, 255, 255, 0.5),
-          0 5px 25px rgba(253, 253, 253, 0.2);
-        background-color: rgba(255, 255, 255, 0.9);
-        color: #fff;
-        padding: 50px;
-        text-align: left;
-      }
-
-      .logo-container {
-        position: fixed;
-        bottom: 50px;
-        right: 130px;
-        width: 300px;
-        height: 200px;
-        z-index: 1000;
-      }
-
-      .logo-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(253, 250, 250);
-        box-shadow: 0 1px 4px rgba(255, 255, 255, 0.5),
-          0 5px 25px rgba(246, 246, 246, 0.946);
-      }
-
-      .logo-container img.logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 100%;
-        max-height: 100%;
-      }
-
-      .logo-container img {
-        margin: 10px;
-        margin-bottom: 30px;
-        height: auto;
-        width: 60%;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/custom.css" />
   </head>
 
   <body>
@@ -108,14 +35,333 @@
         <div class="logo-bg"></div>
         <img src="assets/sannsyn_logo.png" alt="Logo" class="logo" />
       </div>
-      <!-- Slidess -->
+      <!-- Slides -->
       <div id="particles-js"></div>
+      <div id="particles-js-black"></div>
       <div class="slides">
-        <section>
-          <h1>TEST</h1>
+        <!-- ABout Sannsyn -->
+        <section data-background-color="white"></section>
+        <section data-state="show-particles-black">
+          <div style="color: #fff">
+            <p class="r-fit-text">En introduksjon til Sannsyn</p>
+          </div>
+        </section>
+        <section data-state="show-particles">
+          <h1>Hvem er vi?</h1>
+        </section>
+        <section data-background-color="white">
+          <img src="assets/sannsyn_oversikt.png" style="height: 500px" />
+        </section>
+        <section data-background-color="#12a3af">
+          <div class="custom-bullet2 small">
+            <ul>
+              <li class="fragment">
+                Konsulentselskap med høyt kompetente systemutviklere
+              </li>
+              <li class="fragment">Etablert i 2013</li>
+              <li class="fragment">
+                Satsningsområde: maskinlæring, stordata og å skape
+                konkurransekraft med data for våre kunder
+              </li>
+              <li class="fragment">
+                Vi har gjennomført konsulentoppdrag i mange forskjellige
+                bransjer hvor vi har hjulpet flere av Norges ledende bedrifter å
+                løse noen av deres mest utfordrende problemstillinger
+              </li>
+              <li class="fragment">
+                Har også stått bak utviklingen av to avanserte SaaS-produkter:
+                <ul>
+                  <li class="fragment">TellusR for søk</li>
+                  <li class="fragment">Gravity for anbefalinger</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </section>
         <section>
-          <h1>TEST2</h1>
+          <h2>
+            Data science handler om mye mer enn å kunne bruke Python-biblioteker
+          </h2>
+          <div class="custom-bullet small">
+            <ul>
+              <li>
+                Data science regnes som et bredt fagfelt bestående av
+                programmering, matematikk, statistikk og forretningsforståelse
+              </li>
+              <li>
+                I tillegg kommer visualisering og presentasjonsegenskaper,
+                teamarbeid, stordata og en rekke andre spesialiteter for å skape
+                best mulig verdi fra data
+              </li>
+              <li>Svært få behersker alt dette</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-state="show-particles">
+          <h1>Noen tidligere leveranser</h1>
+        </section>
+
+        <section
+          data-background-video="https://dl.dropboxusercontent.com/scl/fi/0rcis2z7g9982tbd1p0p4/windenergy?rlkey=3wkc12ng9i9gmfgzl092xku9c&raw=1"
+          data-background-video-loop
+          data-background-video-muted
+        >
+          <div class="lightbox">
+            <h2 style="font-size: 1em">
+              Optimal geografisk plassering av vind- og hydrogenproduksjon
+            </h2>
+            <div class="custom-bullet" style="font-size: 0.5em">
+              <ul>
+                <li>
+                  Ved å samle data fra en rekke større datakilder, gjorde vi det
+                  mulig å automatisk identifisere ideelle produksjonslokasjoner
+                  og beregnet forventet årlig produksjonsvolum
+                </li>
+                <li>
+                  Prosjektet har gitt kunden en effektiv arbeidsprosess og
+                  tilgang til et intuitivt brukergrensesnitt
+                </li>
+                <li>
+                  Prosjektet ført til en betydelig produktivitetsforbedring
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-background-video="https://dl.dropboxusercontent.com/scl/fi/vvx9egyzp21bvuif1svj2/trading.mp4?rlkey=s6bzxercitcotwq65ppoo0340&raw=1"
+          data-background-video-loop
+          data-background-video-muted
+        >
+          <div class="lightbox">
+            <h2 style="font-size: 1em">
+              Maskinlæringsbasert fondsseleksjon for Aptic AB
+            </h2>
+            <div class="custom-bullet" style="font-size: 0.5em">
+              <ul>
+                <li>
+                  Aptic AB er en av Nordens ledende finansielle selskap, med
+                  tilstedeværelse i 9 land. Da de skulle utvikle
+                  maskinlæringsbasert fondsseleksjon kom de til Sannsyn
+                </li>
+                <li>
+                  PI prosjektet bygger vi en modell som gjennomfører
+                  tidsserieprediksjon basert på millioner av finansindikatorer.
+                  Nevrale nettverk blir så benyttet for å finne mønste i disse
+                  dataene for å forbedre prediksjonen i verdiutviklingen.
+                </li>
+                <li>
+                  Prosjektet oppnådde svært gode resultater og benyttes nå i
+                  live trading
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-background-video="https://dl.dropboxusercontent.com/scl/fi/azbccvrlma50d3pphh945/datalake.mp4?rlkey=jjy66cxomqt9y3gngfk4fqt60&raw=1"
+          data-background-video-loop
+          data-background-video-muted
+        >
+          <div class="lightbox">
+            <h2 style="font-size: 1em">
+              Fra personalisering i ARK bokhandlere til konserninnsikt hos
+              Gyldendal
+            </h2>
+            <div class="custom-bullet" style="font-size: 0.5em">
+              <ul>
+                <li>
+                  Personaliseringsprosjekt hos ARK ledet til bygging av en
+                  avansert enterprise innsikts-datasjø i Azure hos morselskapet
+                  Gyldendal ASA
+                </li>
+                <li>
+                  Avansert innsikt og økt treffsikkerhet i kjøpsøyeblikket har
+                  gitt et betydelig hopp i antallet salgskonverteringer
+                </li>
+                <li>
+                  Både personaliseringsmulighetene for ARK og
+                  innsiktsmulighetene for Gyldendal skapte konkurransefortrinn i
+                  bransjen
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Chat and TellusR-->
+        <section data-background-color="#E6F4F1">
+          <h2>TellusR VS ChatGPT</h2>
+          <div class="custom-bullet">
+            <ul>
+              <li class="fragment">
+                ChatGPT kan kun håndtere få og korte dokumenter
+              </li>
+              <li class="fragment">TellusR håndterer mange dokumenter</li>
+            </ul>
+          </div>
+        </section>
+        <section data-background-color="#E6FEFF">
+          <h2>TellusR vs Copilot</h2>
+          <div class="custom-bullet">
+            <ul>
+              <li class="fragment">
+                Copilot håndterer interne dokumenter for intern eksponering
+              </li>
+              <li class="fragment">
+                TellusR håndterer data som skal eksponeres eksternt
+                <ul>
+                  <li class="fragment">Data fra databaser</li>
+                  <li class="fragment">
+                    Dokumenter som skal være søkbare i eksterne nettløsninger
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="" style="text-align: center">
+            <p class="large">TellusR + ChatGPT</p>
+            <p class="xlarge">=</p>
+            <p class="large">Søk og dialog</p>
+          </div>
+        </section>
+
+        <section data-background-color="lightgrey">
+          <section>
+            <img
+              src="assets/chatexamples/anboringskammer01.png"
+              class="fragment"
+            />
+            <img
+              src="assets/chatexamples/anboringskammer02.png"
+              class="fragment"
+            />
+          </section>
+          <section>
+            <img src="assets/chatexamples/anboringskammer03.png" />
+            <img
+              src="assets/chatexamples/anboringskammer04.png"
+              class="fragment"
+            />
+          </section>
+          <section>
+            <img src="assets/chatexamples/anboringskammer05.png" />
+            <img
+              src="assets/chatexamples/anboringskammer06.png"
+              class="fragment"
+            />
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <img src="assets/chatexamples/byggesak01.png" class="fragment" />
+            <img src="assets/chatexamples/byggesak02.png" class="fragment" />
+          </section>
+          <section>
+            <img src="assets/chatexamples/byggesak03.png" />
+            <img src="assets/chatexamples/byggesak04.png" class="fragment" />
+          </section>
+        </section>
+
+        <section data-background-color="black">
+          <section>
+            <img src="assets/chatexamples/lydbok01.png" class="fragment" />
+            <img src="assets/chatexamples/lydbok02.png" class="fragment" />
+          </section>
+          <section>
+            <img src="assets/chatexamples/lydbok03.png" />
+            <img
+              src="assets/chatexamples/lydbok04_asvsluttende.png"
+              class="fragment"
+            />
+          </section>
+        </section>
+
+        <section data-background-color="#FFE8D2">
+          <h2>Potensielle bruksområder</h2>
+          <div class="custom-bullet">
+            <ul>
+              <li class="fragment">
+                Foreslå kurs og ha dialog med brukeren om kurs
+              </li>
+              <li class="fragment">
+                Tilgjengeliggjøre informasjon på nettet
+                <ul>
+                  <li class="fragment">Semantisk søk</li>
+                  <li class="fragment">
+                    Brukerne kan spørre om innholdet i treffliste
+                  </li>
+                </ul>
+              </li>
+              <li class="fragment">Saksbehandling</li>
+              <li class="fragment">Mange flere muligheter</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <section>
+            <img
+              src="assets/chatexamples/feriepenger_neutral01.png"
+              class="fragment"
+            />
+            <img
+              src="assets/chatexamples/feriepenger_neutral02.png"
+              class="fragment"
+            />
+          </section>
+          <section>
+            <img src="assets/chatexamples/feriepenger_neutral03.png" />
+            <img
+              src="assets/chatexamples/feriepenger_neutral04.png"
+              class="fragment"
+            />
+          </section>
+          <section>
+            <img src="assets/chatexamples/feriepenger_neutral05.png" />
+            <img
+              src="assets/chatexamples/feriepenger_neutral06.png"
+              class="fragment"
+            />
+          </section>
+        </section>
+
+        <!-- Chat and TellusR-->
+        <section data-state="show-particles">
+          <h1>Lønnsstatistikk</h1>
+        </section>
+
+        <section>
+          <h2>En god lønnstatistikk krever</h2>
+          <div class="custom-bullet">
+            <ul>
+              <li>Høy svarprosent</li>
+              <li>God datakvalitet</li>
+              <li>God presentasjon</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Prosessen</h2>
+          <div class="custom-bullet">
+            <ul>
+              <li>
+                Innsamling
+                <ul>
+                  <li>Første utsending</li>
+                  <li>Påminnelser</li>
+                </ul>
+              </li>
+              <li>Datavasking</li>
+              <li>Publisering</li>
+            </ul>
+          </div>
         </section>
       </div>
     </div>
