@@ -44,13 +44,32 @@ body {
   z-index: 1;
 }
 
+.sannsynbox {
+  width: 90%;
+  right: 0;
+  box-shadow: 0 1px 10px rgba(18, 163, 175, 0.7),
+    0 20px 30px rgba(18, 163, 175, 0.3);
+  background-color: rgba(18, 163, 175, 0.9);
+  color: #fff;
+  padding: 30px;
+  text-align: left;
+}
+.sannsynbox h1,
+.sannsynbox h2,
+.sannsynbox h3,
+.sannsynbox h4,
+.sannsynbox h5,
+.sannsynbox h6 {
+  color: #fff !important;
+}
+
 .darkbox {
   width: 90%;
   right: 0;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 5px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.785), 0 20px 30px rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
-  padding: 50px;
+  padding: 30px;
   text-align: left;
 }
 .darkbox h1,
@@ -59,6 +78,24 @@ body {
 .darkbox h4,
 .darkbox h5,
 .darkbox h6 {
+  color: #fff !important;
+}
+
+.darkbox_small {
+  width: 50%;
+  right: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 5px 25px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 50px;
+  text-align: left;
+}
+.darkbox_small h1,
+.darkbox_small h2,
+.darkbox_small h3,
+.darkbox_small h4,
+.darkbox_small h5,
+.darkbox_small h6 {
   color: #fff !important;
 }
 
