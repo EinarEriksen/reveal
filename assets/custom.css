@@ -35,6 +35,10 @@ body {
   font-size: 0.75em;
 }
 
+.xsmall {
+  font-size: 0.5em;
+}
+
 .content {
   position: relative;
   z-index: 1;
@@ -86,6 +90,16 @@ body {
   font-size: 0.8em;
 }
 
+.custom-bullet ul ul ul {
+  list-style-type: none; /* Override global styles */
+}
+
+.custom-bullet ul ul ul li::before {
+  content: "◦";
+  color: #12a3af;
+  font-size: 0.6em;
+}
+
 .custom-bullet2 ul {
   list-style: none;
   padding: 0;
@@ -112,6 +126,16 @@ body {
   content: "–";
   color: #fff;
   font-size: 0.8em;
+}
+
+.custom-bullet2 ul ul ul {
+  list-style-type: none; /* Override global styles */
+}
+
+.custom-bullet2 ul ul ul li::before {
+  content: "◦";
+  color: #fff;
+  font-size: 0.6em;
 }
 
 .lightbox {

@@ -21,6 +21,28 @@ Reveal.addEventListener("slidechanged", function (event) {
   }
 });
 
+// Set initial state on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const currentSlide = Reveal.getCurrentSlide();
+  const state = currentSlide.getAttribute("data-state");
+
+  const particles = document.getElementById("particles-js");
+  const particlesBlack = document.getElementById("particles-js-black");
+
+  if (state === "show-particles") {
+    particles.style.display = "block";
+    particlesBlack.style.display = "none";
+    loadParticles("particles-js");
+  } else if (state === "show-particles-black") {
+    particlesBlack.style.display = "block";
+    particles.style.display = "none";
+    loadParticles("particles-js-black");
+  } else {
+    particles.style.display = "none";
+    particlesBlack.style.display = "none";
+  }
+});
+
 function loadParticles(id) {
   particlesJS.load(id, "assets/particlesjs-config.json", function () {
     console.log("callback - " + id + " particles.js config loaded");
