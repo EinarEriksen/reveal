@@ -429,16 +429,175 @@
             </ul>
           </div>
         </section>
+        <section>
         <section data-background-color="#324B4E">
           <h2>Et moderne dashbord for medlemmene</h2>
+        </section>
+        <section>
+          <div class="xsmall">
+          <table
+          id="example"
+          class="display"
+          style="
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          <thead>
+            <tr>
+              <th>Stilling</th>
+              <th>Gjennomsnittlig eksamensår (erfaring)</th>
+              <th>Gjennomsnittslønn</th>
+              <th>Medianlønn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rådgiver</td>
+              <td>2012</td>
+              <td>680 000 kr</td>
+              <td>650 000 kr</td>
+            </tr>
+            <tr>
+              <td>Seniorrådgiver</td>
+              <td>2001</td>
+              <td>840 000 kr</td>
+              <td>810 000 kr</td>
+            </tr>
+            <tr>
+              <td>Prosjektleder</td>
+              <td>2008</td>
+              <td>750 000 kr</td>
+              <td>720 000 kr</td>
+            </tr>
+            <tr>
+              <td>Konsulent</td>
+              <td>2010</td>
+              <td>600 000 kr</td>
+              <td>570 000 kr</td>
+            </tr>
+            <tr>
+              <td>Salgsleder</td>
+              <td>2005</td>
+              <td>720 000 kr</td>
+              <td>690 000 kr</td>
+            </tr>
+            <tr>
+              <td>Markedssjef</td>
+              <td>2013</td>
+              <td>900 000 kr</td>
+              <td>870 000 kr</td>
+            </tr>
+            <tr>
+              <td>Regnskapsfører</td>
+              <td>1999</td>
+              <td>540 000 kr</td>
+              <td>510 000 kr</td>
+            </tr>
+            <tr>
+              <td>Driftsleder</td>
+              <td>2012</td>
+              <td>800 000 kr</td>
+              <td>770 000 kr</td>
+            </tr>
+            <tr>
+              <td>IT-konsulent</td>
+              <td>2016</td>
+              <td>700 000 kr</td>
+              <td>670 000 kr</td>
+            </tr>
+            <tr>
+              <td>Revisor</td>
+              <td>2008</td>
+              <td>660 000 kr</td>
+              <td>630 000 kr</td>
+            </tr>
+            <tr>
+              <td>HR-leder</td>
+              <td>2005</td>
+              <td>850 000 kr</td>
+              <td>820 000 kr</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        </section>
+        <section> 
+          <h2>Velg egenskaper</h2>
+          <p>Seniorrådgiver</p>
+          <select
+            style="margin-left: 100px; margin-top: 100px"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Velg arbeidserfaring</option>
+            <option value="1">0-5 år</option>
+            <option value="2">6-10 år</option>
+            <option value="3">11-20 år</option>
+            <option value="3">Mer enn 20 år</option>
+          </select>
+        </section>
+        <section>
+          <h2>Seniorrådgiver</h2>
+          <div style="margin-bottom: 150px">
+            <canvas id="myChart"></canvas>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script>
+            const ctx = document.getElementById("myChart");
+      
+            new Chart(ctx, {
+              type: "bar",
+              data: {
+                labels: ["0-5 år", "6-10 år", "11-20 år", "Mer enn 20 år"],
+                datasets: [
+                  {
+                    label: "Arbeidserfaring",
+                    data: [610000, 680000, 710000, 750000],
+                    backgroundColor: ["grey", "#12a3af", "grey", "grey"], // Set color for each bar
+                    borderWidth: 1,
+                  },
+                ],
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    ticks: {
+                      callback: function(value) {
+                        return value + " kr";
+                      },
+                    },
+                  },
+                },
+                plugins: {
+                  legend: {
+                    display:false,
+                  },
+                  tooltip: {
+                    callbacks: {
+                      label: function(context) {
+                        return context.dataset.label + ": " + context.raw + " kr";
+                      }
+                    }
+                  }
+                }
+              },
+            });
+          </script>
+        </section>
+      
+        <section>
+        
           <div class="custom-bullet small">
             <ul>
               <li>
-                Brukerne definerer hva de vil se – mer relevant lønnsstatistikk
+                <strong>FLEKSIBELT:</strong> Brukerne definerer hva de vil se – mer relevant lønnsstatistikk
                 som eliminerer leting i store tabeller
               </li>
               <li>
-                Mulig å gi tillitsvalgte rettigheter til ekstra innsikt
+                <strong>DETALJERT:</strong>Mulig å gi tillitsvalgte rettigheter til ekstra innsikt
                 <ul>
                   <li>Detaljert innsikt for medlemmer hos egen arbeidsgiver</li>
                   <li>Mer detaljert innsikt i sammenlignbare bedrifer</li>
@@ -449,10 +608,11 @@
                   </li>
                 </ul>
               </li>
-              <li>Sikrer god innsikt uten å gå for dypt</li>
+              <li><strong>DATAKVALITET:</strong> Sikrer god innsikt uten å gå for dypt</li>
             </ul>
           </div>
         </section>
+      </section>
         <section data-background-color="#FFE8D2">
           <img
             src="assets/naturviterne_webapp.drawio.png"
